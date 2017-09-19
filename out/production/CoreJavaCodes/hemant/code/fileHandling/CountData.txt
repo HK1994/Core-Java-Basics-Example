@@ -1,0 +1,8 @@
+Hello
+This is the First Line
+Infact this was not the first line it was second\
+so the previous one was 3rd and it's 4th.
+
+Testing the append file
+
+Testing the append file1
