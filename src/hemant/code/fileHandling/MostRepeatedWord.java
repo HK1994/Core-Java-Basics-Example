@@ -1,10 +1,5 @@
 package hemant.code.fileHandling;
-
-import com.sun.media.jfxmedia.logging.Logger;
-import org.apache.commons.logging.Log;
-
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
