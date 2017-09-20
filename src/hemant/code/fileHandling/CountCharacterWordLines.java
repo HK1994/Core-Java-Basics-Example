@@ -12,47 +12,26 @@ import java.io.IOException;
 public class CountCharacterWordLines {
 
     public static void main(String args[]) throws IOException {
-        BufferedReader bufferedReader = null;
-
         int charCount = 0;
         int wordCount = 0;
         int lineCount = 0;
-
-        try{
-            bufferedReader = new BufferedReader(new FileReader("C:\\CoreJavaCodes\\src\\hemant\\code\\fileHandling\\CountData.txt"));
-
+        try (FileReader file = new FileReader("C:\\CoreJavaCodes\\src\\hemant\\code\\fileHandling\\CountData.txt");
+             BufferedReader bufferedReader = new BufferedReader(file)) {
             String currentLine = bufferedReader.readLine();
-            while(currentLine!=null)
-            {
+            while (currentLine != null) {
                 lineCount++;
                 String[] words = currentLine.split(" ");
-                wordCount = wordCount+ words.length;
-
-                for (String word:words)
-                {
-                    charCount = charCount+word.length();
+                wordCount = wordCount + words.length;
+                for (String word : words) {
+                    charCount = charCount + word.length();
                 }
-
                 currentLine = bufferedReader.readLine();
             }
-
-            System.out.println("Number of Lines in the File = " +lineCount);
-            System.out.println("Number of Words in the File = " +wordCount);
-            System.out.println("Number of Characters in the File = " +charCount);
-
-
+            System.out.println("Number of Lines in the File = " + lineCount);
+            System.out.println("Number of Words in the File = " + wordCount);
+            System.out.println("Number of Characters in the File = " + charCount);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-
-        }
-        finally {
-            {
-                try {
-                    bufferedReader.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
         }
     }
 }
