@@ -3,3 +3,5 @@
  * If you use generics, you need not to perform the type casting explicitly.
  * Java compiler applies strong type checking if you use generics in your code and shows errors if the code violates the type safety.
   Thus removing the risk of ClassCastException.
+
+  * Generics work only with derived types
