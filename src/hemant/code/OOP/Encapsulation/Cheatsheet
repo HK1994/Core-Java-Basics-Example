@@ -1,0 +1,2 @@
+what is the benefit of encapsulation in java programming?
+Well, at some point of time, if you want to change the implementation details of the class , you can freely do so without affecting the classes that are using it.

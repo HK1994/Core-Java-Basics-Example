@@ -1,0 +1,11 @@
+Inheritance
+
+The process by which one class acquires the properties and functionality of another class is called inheritance.
+ Inheritance provides the idea of reusability of code and each sub class defines only those features that are unique to it, rest of the features can be inherited from the parent class.
+
+Inheritance is a process of defining a new class based on an existing class by extending its common data members and methods.
+Inheritance allows us to reuse of code, it improves reusability in your java application.
+The parent class is called the base class or super class. The child class that extends the base class is called the derived class or sub class or child class.
+
+The biggest advantage of Inheritance is that the code in base class need not be rewritten in the child class.
+The variables and methods of the base class can be used in the child class as well.
