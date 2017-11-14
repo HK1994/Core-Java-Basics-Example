@@ -1,0 +1,7 @@
+ * Generics are required to write type safety code and to remove the risk of ClassCastException at run time.
+ * Generics are introduced in Java 5 to provide the type checking at compile time.
+ * If you use generics, you need not to perform the type casting explicitly.
+ * Java compiler applies strong type checking if you use generics in your code and shows errors if the code violates the type safety.
+  Thus removing the risk of ClassCastException.
+
+  * Generics work only with derived types
